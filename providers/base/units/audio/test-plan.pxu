@@ -54,6 +54,7 @@ include:
     audio/alsa_info_attachment
     audio/list_devices
     audio/valid-sof-firmware-sig
+    audio/alsa-loopback-automated
 
 id: audio-cert-blockers
 unit: test plan
@@ -91,6 +92,7 @@ include:
     after-suspend-audio/detect_sinks
     after-suspend-audio/detect_sources
     after-suspend-audio/alsa_record_playback_automated
+    after-suspend-audio/alsa-loopback-automated
 
 id: audio-full
 unit: test plan
@@ -107,7 +109,6 @@ _name: Manual audio tests
 _description: Manual audio tests for Snappy Ubuntu Core devices
 include:
     audio/alsa-playback
-    audio/alsa-loopback
 
 id: audio-pa-manual
 unit: test plan
